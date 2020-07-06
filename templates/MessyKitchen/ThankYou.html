@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thank You</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+</head>
+<body>
+<div class="container" >
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="row">
+        <div class="w-25 p-3 col-sm-2" style="background-color: #D4C8D5;color:Green;">
+            <h2>Thank You !!!!</h2>
+    </div>
+        <div class="p-2 col-sm-6" style="background-color: #eee;color:Green;">
+           <pre style="color:blue;font-family:sans-serif;">{{message}}</pre>
+        </div>
+        </div>
+
+
+   <input type="submit" value="Return To Messy Kitchen" class="btn btn-success" >
+
+
+</form>
+</div>
+
+</body>
+</html>
